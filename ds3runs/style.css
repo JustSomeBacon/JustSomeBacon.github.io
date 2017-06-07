@@ -1,0 +1,111 @@
+/*
+  ___             _
+ | _ \___ ___ ___| |_ ___
+ |   / -_|_-</ -_)  _(_-<
+ |_|_\___/__/\___|\__/__/
+*/
+
+/* Reset */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+
+/* Remove image border from old browsers */
+img {
+	border: 0;
+}
+
+/* Box-sizing (don't include margin/padding/border in size calculations) */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*
+  _                       _
+ | |   __ _ _  _ ___ _  _| |_
+ | |__/ _` | || / _ \ || |  _|
+ |____\__,_|\_, \___/\_,_|\__|
+			|__/
+*/
+
+/* Vertical scrollbar always visible to avoid jumpiness */
+body {
+	overflow-y: scroll;
+}
+
+section {
+	/* Full page size */
+	width: 100%;
+	height: 100vh;
+
+	/* Order elements vertically */
+	display: flex;
+	flex-direction: column;
+
+	/* Center vertically and horizontally */
+	text-align: center;
+	justify-content: center;
+}
+
+/* Include dropdown on same line */
+.difficulty-text, #difficulty-dropdown {
+	display: inline;
+}
+
+#generate {
+	display: block; /* Move to own line */
+	margin: 0 auto; /* Center horizontally */
+}
+
+.hidden {
+	display: none;
+}
+
+/*
+  ___ _        _
+ / __| |_ _  _| |___
+ \__ \  _| || | / -_)
+ |___/\__|\_, |_\___|
+          |__/
+*/
+
+body {
+	background-color: #191919;
+	color: #eaeaea;
+	font-size: 2.4em;
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+#difficulty-dropdown {
+	border: none;
+	border-bottom: 1px solid #eaeaea;
+	color: #eaeaea;
+	background-color: #191919;
+	font-size: 1em;
+	font-style: italic;
+
+	/* Hide arrow */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+#difficulty-dropdown:hover {
+	cursor: pointer;
+}
+
+#difficulty-dropdown option {
+	font-style: normal;
+}
+
+#generate {
+	font-size: 1em;
+	margin-top: 40px;
+}
